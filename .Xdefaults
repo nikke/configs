@@ -1,23 +1,12 @@
-!Fonts
 urxvt*font: xft:Terminus:pixelsize=11
- 
-!Options
-URxvt*urgentOnBell: true
-URxvt*visualBell: true
-URxvt*termName: rxvt-unicode
-URxvt*borderless: 1
-URxvt*scrollBar: false
-URxvt*saveLines: 10001
- 
-!Links
-URxvt*perl-ext-common: matcher
-URxvt*urlLauncher: firefox
-URxvt*matcher.button: 1
-URxvt*matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@URxvt-]*[\\w/-]
- 
-URxvt*cursorBlink: true
- 
-!Colors
+urxvt*termName:         rxvt
+urxvt*scrollBar:        false
+urxvt*perl-lib:         /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox
+URxvt.matcher.button: 2
+URxvt.matcher.pattern.1: \\bwww\\.[\\w-]\\.[\\w./?&@#-]*[\\w/-] 
+
 *background: #1C1C1C
 *foreground: #D0D0D0
  
