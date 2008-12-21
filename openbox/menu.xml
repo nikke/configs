@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="root-menu" label="Theron">
+		<separator label="nBox"/>
+		<item label="Web">
+			<action name="Execute">
+				<execute>
+					firefox
+				</execute>
+			</action>
+		</item>
+		<item label="Files">
+			<action name="Execute">
+				<execute>
+					thunar
+				</execute>
+			</action>
+		</item>
+		<item label="Term">
+			<action name="Execute">
+				<execute>
+					urxvt
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Run...">
+			<action name="Execute">
+				<execute>
+					bbrun -w
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="system-menu" label="System">
+			<item label="obconf">
+				<action name="Execute">
+					<command>
+						obconf
+					</command>
+					<startupnotify>
+						<enabled>
+							yes
+						</enabled>
+					</startupnotify>
+				</action>
+			</item>
+			<item label="obmenu">
+				<action name="Execute">
+					<command>
+						obmenu
+					</command>
+					<startupnotify>
+						<enabled>
+							yes
+						</enabled>
+					</startupnotify>
+				</action>
+			</item>
+
+			<item label="Wallpaper">
+				<action name="Execute">
+					<command>
+						nitrogen ~/walls
+					</command>
+				</action>
+			</item>
+
+			<separator/>
+			<item label="reconfigure openbox">
+				<action name="Reconfigure"/>
+			</item>
+			<item label="exit openbox">
+				<action name="Exit">
+					<prompt>
+						yes
+					</prompt>
+				</action>
+			</item>
+		</menu>
+	</menu>
+</openbox_menu>

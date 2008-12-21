@@ -1,0 +1,3 @@
+nitrogen --restore &
+conky &
+
